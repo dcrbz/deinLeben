@@ -9,3 +9,5 @@ deinLeben allows marrying other players. That's it.
 ### Dependencies
 - [dcCore](https://github.com/dcrbz/dcCore)
 - [Levitate](https://github.com/dcrbz/Levitate)
+
+<sup><sup><sup>They forced me to make this plugin</sup></sup></sup>
