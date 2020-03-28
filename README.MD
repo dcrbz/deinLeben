@@ -1,6 +1,6 @@
 # deinLeben
 
-deinProtect allows marrying other players. That's it.
+deinLeben allows marrying other players. That's it.
 
 ### Features
 - Marry players
