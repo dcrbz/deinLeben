@@ -1,0 +1,6 @@
+name: deinLeben
+author: leNic
+version: ${project.version}
+main: bz.dcr.deinleben.DeinLebenPlugin
+api-version: 1.15
+depend: [dcCore, SlimyGuis, Levitate]
