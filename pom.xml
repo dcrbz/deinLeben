@@ -56,14 +56,6 @@
             <version>1.6.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-
-        <!-- SlimyGuis -->
-        <dependency>
-            <groupId>xyz.upperlevel.spigot.gui</groupId>
-            <artifactId>slimyguis</artifactId>
-            <version>2.2.0</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <!-- Build Settings -->
