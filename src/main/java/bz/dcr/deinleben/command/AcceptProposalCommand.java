@@ -7,6 +7,7 @@ import bz.dcr.deinleben.model.Proposal;
 import de.ketrwu.levitate.ParameterSet;
 import de.ketrwu.levitate.annotation.Command;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
@@ -36,6 +37,12 @@ public class AcceptProposalCommand {
             // No proposal found
             if (!proposal.isPresent()) {
                 player.sendMessage(plugin.getLangManager().getMessage(LangKey.NO_PROPOSAL_RECEIVED, true));
+                return;
+            }
+
+            // Paddy und Kaly dürfen nicht heiraten
+            if (proposal.get().isPaddyAndKaly()) {
+                player.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "Fehler 0x3F " + ChatColor.RED + "Diese Ehe ist nicht zulässig.");
                 return;
             }
 

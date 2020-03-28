@@ -14,6 +14,9 @@ import java.util.UUID;
 })
 public class Proposal {
 
+    private static final UUID PADDY_UUID = UUID.fromString("12e191c1-3c01-4261-b31e-eee996235490");
+    private static final UUID KALY_UUID = UUID.fromString("5b66cafc-ec39-4630-8cc3-c94c02f77dc6");
+
     @Id
     private ObjectId id;
 
@@ -64,6 +67,11 @@ public class Proposal {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public boolean isPaddyAndKaly() {
+        return (applicant.equals(PADDY_UUID) && recipient.equals(KALY_UUID)) ||
+                (recipient.equals(PADDY_UUID) && applicant.equals(KALY_UUID));
     }
 
 }
